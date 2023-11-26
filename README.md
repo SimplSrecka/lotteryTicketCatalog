@@ -6,7 +6,6 @@
 * Ogled kataloga srečk
 * Treba še dodati/napisati!!!!
 
-
 |   |   |
 |--|--|
 |__Naziv Projekta__| SimplSrečka |
