@@ -4,14 +4,18 @@ kumuluzee:
     name: dev
   version: 1.0.0
   server:
-    base-url: http://localhost:8080
+    #base-url: http://localhost:8080
+    base-url: http://20.253.63.208:8080
     http:
       port: 8080
   datasources:
     - jndi-name: jdbc/LotteryTicketDS
-      connection-url: jdbc:postgresql://localhost:5432/lottery-ticket
-      username: dbuser
-      password: postgres
+      #connection-url: jdbc:postgresql://localhost:5432/lottery-ticket
+      connection-url: jdbc:postgresql://sqlsimplsrecka.postgres.database.azure.com:5432/lottery-ticket
+      username: lukaariana
+      password: XonaryLu99
+      #username: dbuser
+      #password: postgres
   health:
     checks:
       data-source-health-check:
