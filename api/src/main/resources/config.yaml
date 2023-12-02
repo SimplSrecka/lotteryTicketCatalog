@@ -5,7 +5,7 @@ kumuluzee:
   version: 1.0.0
   server:
     #base-url: http://localhost:8080
-    base-url: http://20.253.63.208:8080
+    base-url: http://20.124.164.150:8080
     http:
       port: 8080
   datasources:

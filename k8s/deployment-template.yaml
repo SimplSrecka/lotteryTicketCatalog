@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - image: lb4684/lottery-ticket-catalog:latest
-          name: lottery-drawing-results
+          name: lottery-ticket-catalog
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
               value: jdbc:postgresql://sqlsimplsrecka.postgres.database.azure.com:5432/lottery-ticket
