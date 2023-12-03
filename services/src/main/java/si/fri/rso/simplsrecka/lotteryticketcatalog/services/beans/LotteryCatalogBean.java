@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 import com.kumuluz.ee.rest.beans.QueryParameters;
 import com.kumuluz.ee.rest.utils.JPAUtils;
 
+import org.eclipse.microprofile.metrics.annotation.Gauge;
 import org.eclipse.microprofile.metrics.annotation.Timed;
 
 import si.fri.rso.simplsrecka.lotteryticketcatalog.lib.LotteryTicket;
@@ -34,7 +35,7 @@ public class LotteryCatalogBean {
         return resultList.stream().map(LotteryTicketConverter::toDto).collect(Collectors.toList());
     }
 
-    @Timed
+    @Timed(name = "get_lottery_tickets_filter")
     public List<LotteryTicket> getLotteryTicketsFilter(UriInfo uriInfo) {
         QueryParameters queryParameters = QueryParameters.query(uriInfo.getRequestUri().getQuery()).defaultOffset(0).build();
         return JPAUtils.queryEntities(em, LotteryTicketEntity.class, queryParameters).stream()
@@ -49,6 +50,7 @@ public class LotteryCatalogBean {
         return LotteryTicketConverter.toDto(lotteryTicketEntity);
     }
 
+    @Gauge(name = "create_lottery_ticket", unit = "MetricUnits.NONE")
     public LotteryTicket createLotteryTicket(LotteryTicket lotteryTicket) {
         LotteryTicketEntity lotteryTicketEntity = LotteryTicketConverter.toEntity(lotteryTicket);
         try {
