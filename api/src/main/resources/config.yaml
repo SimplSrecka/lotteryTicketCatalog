@@ -10,11 +10,10 @@ kumuluzee:
       port: 8080
   datasources:
     - jndi-name: jdbc/LotteryTicketDS
-      connection-url: jdbc:postgresql://localhost:5432/lottery-ticket
-      #connection-url: jdbc:postgresql://sqlsimplsrecka.postgres.database.azure.com:5432/lottery-ticket
+      #connection-url: jdbc:postgresql://localhost:5432/lottery-ticket
+      connection-url: jdbc:postgresql://sqlsimplsrecka.postgres.database.azure.com:5432/lottery-ticket
       username: lukaariana
       password: ${{ secrets.AZURE_CREDENTIALS }}
-      #password: XonaryLu99
       #username: dbuser
       #password: postgres
   health:
@@ -34,7 +33,7 @@ kumuluzee:
                                         <PatternLayout pattern="%d %p %marker %m %X %ex %n"/>
                                     </Console>
                                     <Socket name="SimplSrecka" host="4dd8db1a-6ae2-4cfc-81a7-c9d1cf9dda97-ls.logit.io"
-                                    port="32630" protocol="udp">
+                                    port="32633" protocol="udp">
                                         <JSONLayout complete="false" compact="true" eventEol="true" charset="UTF-8" properties="true"/>
                                     </Socket>
                                 </Appenders>
