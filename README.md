@@ -1,6 +1,6 @@
 # SimplSrecka
 
-## Mikrostoritev:Lottery Ticket Catalog
+## Mikrostoritev: Lottery Ticket Catalog
 
 ### Funkcionalnosti te mikrostoritve:
 * Ogled kataloga srečk
