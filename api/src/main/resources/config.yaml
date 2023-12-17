@@ -4,10 +4,10 @@ kumuluzee:
     name: dev
   version: 1.0.0
   server:
-    #base-url: http://localhost:8080
-    base-url: http://20.241.221.65:8080
+    #base-url: http://localhost:8081
+    base-url: http://20.124.148.88:8081
     http:
-      port: 8080
+      port: 8081
   datasources:
     - jndi-name: jdbc/LotteryTicketDS
       #connection-url: jdbc:postgresql://localhost:5432/lottery-ticket
@@ -16,24 +16,40 @@ kumuluzee:
       password: ${{ secrets.AZURE_CREDENTIALS }}
       #username: dbuser
       #password: postgres
+      pool:
+        max-size: 4
+  dev:
+    scan-libraries:
+      - lottery-ticket-catalog-models
+      - lottery-ticket-catalog-services
+      - lottery-ticket-catalog-lib
+  openapi-mp:
+    ui:
+      #specification-server: http://localhost:8081
+      specification-server: http://20.124.148.88:8081
+    swagger-ui:
+      path: /api-specs/ui
   health:
     checks:
       data-source-health-check:
         type: liveness
         jndi-name: jdbc/LotteryTicketDS
+      disk-space-health-check:
+        threshold: 100000000
+        type: liveness
   metrics:
     web-instrumentation:
       - name: tickets-endpoint
         url-pattern: /v1/tickets/*
   logs:
     config-file: '<?xml version="1.0" encoding="UTF-8"?>
-                            <Configuration name="comments">
+                            <Configuration name="SimplSrecka">
                                 <Appenders>
                                     <Console name="console" target="SYSTEM_OUT">
                                         <PatternLayout pattern="%d %p %marker %m %X %ex %n"/>
                                     </Console>
-                                    <Socket name="SimplSrecka" host="4dd8db1a-6ae2-4cfc-81a7-c9d1cf9dda97-ls.logit.io"
-                                    port="32633" protocol="udp">
+                                    <Socket name="logstash" host="754b7d50-cb52-4b7f-af7f-0a0827e24bef-ls.logit.io"
+                                    port="26348" protocol="udp">
                                         <JSONLayout complete="false" compact="true" eventEol="true" charset="UTF-8" properties="true"/>
                                     </Socket>
                                 </Appenders>
@@ -47,4 +63,3 @@ kumuluzee:
                             </Configuration>'
 rest-properties:
   broken: false
-

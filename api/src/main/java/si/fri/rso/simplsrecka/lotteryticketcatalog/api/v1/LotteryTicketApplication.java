@@ -13,8 +13,8 @@ import org.eclipse.microprofile.openapi.annotations.servers.Server;
 @OpenAPIDefinition(info = @Info(title = "Lottery ticket catalog API", version = "v1",
         contact = @Contact(email = "lb4684@student.uni-lj.si"),
         license = @License(name = "dev"), description = "API for managing image metadata."),
-        //servers = @Server(url = "http://localhost:8080/"))
-        servers = @Server(url = "http://20.241.221.65:8080/"))
+        //servers = @Server(url = "http://localhost:8081/"))
+        servers = @Server(url = "http://20.124.148.88:8081/"))
 @ApplicationPath("/v1")
 public class LotteryTicketApplication extends Application {
 

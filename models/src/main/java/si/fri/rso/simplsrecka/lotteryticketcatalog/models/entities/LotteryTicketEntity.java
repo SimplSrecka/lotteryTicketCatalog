@@ -25,13 +25,6 @@ public class LotteryTicketEntity {
     @Column(name = "price")
     private Double price;
 
-    @Column(name = "created")
-    private Instant created;
-
-    @Column(name = "draw_date")
-    private Instant drawDate;
-
-    // Dodajanje getterjev in setterjev
 
     public Integer getId() {
         return id;
@@ -63,21 +56,5 @@ public class LotteryTicketEntity {
 
     public void setPrice(Double price) {
         this.price = price;
-    }
-
-    public Instant getCreated() {
-        return created;
-    }
-
-    public void setCreated(Instant created) {
-        this.created = created;
-    }
-
-    public Instant getDrawDate() {
-        return drawDate;
-    }
-
-    public void setDrawDate(Instant drawDate) {
-        this.drawDate = drawDate;
     }
 }

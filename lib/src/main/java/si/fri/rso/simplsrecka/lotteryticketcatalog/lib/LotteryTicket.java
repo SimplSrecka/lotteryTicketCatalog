@@ -8,8 +8,7 @@ public class LotteryTicket {
     private String name;
     private String description;
     private Double price;
-    private Instant created;
-    private Instant drawDate;
+
 
     public Integer getTicketId() {
         return ticketId;
@@ -41,21 +40,5 @@ public class LotteryTicket {
 
     public void setPrice(Double price) {
         this.price = price;
-    }
-
-    public Instant getCreated() {
-        return created;
-    }
-
-    public void setCreated(Instant created) {
-        this.created = created;
-    }
-
-    public Instant getDrawDate() {
-        return drawDate;
-    }
-
-    public void setDrawDate(Instant drawDate) {
-        this.drawDate = drawDate;
     }
 }

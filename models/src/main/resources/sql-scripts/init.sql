@@ -1,1 +1,2 @@
-INSERT INTO lottery_ticket (name, description, price, created, draw_date) VALUES ('Srečka 1', 'To je prva srečka, ki smo jo ustvarili za projekt RSO.', 10.0, TIMESTAMP '2023-01-01 10:00:00', TIMESTAMP '2023-01-15 20:00:00');
+INSERT INTO lottery_ticket (name, description, price) VALUES ('Srečka 1', 'To je prva srečka, ki smo jo ustvarili za projekt RSO.', 10.0);
+INSERT INTO lottery_ticket (name, description, price) VALUES ('Srečka 2', 'To je druga srečka, ki smo jo ustvarili za projekt RSO.', 50.0);
