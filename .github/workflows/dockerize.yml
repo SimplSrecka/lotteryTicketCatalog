@@ -58,5 +58,5 @@ jobs:
 
       - name: Deploy to AKS
         run: |
-          kubectl set image deployment/lottery-ticket-catalog-deployment lottery-ticket-catalog=lb4684/lottery-ticket-catalog:${{ steps.current-time.outputs.formattedTime }} --namespace rso
-          kubectl rollout status deployment/lottery-ticket-catalog-deployment --namespace rso
+          kubectl set image deployment/lottery-ticket-catalog-deployment lottery-ticket-catalog=lb4684/lottery-ticket-catalog:${{ steps.current-time.outputs.formattedTime }} -n rso
+          kubectl rollout status deployment/lottery-ticket-catalog-deployment -n rso
