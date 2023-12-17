@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: lottery-ticket-catalog-deployment
+  namespace: rso
 spec:
   replicas: 1
   selector:
