@@ -27,8 +27,8 @@ kumuluzee:
     ui:
       #specification-server: http://localhost:8081
       specification-server: http://20.124.175.39:8081
-    swagger-ui:
-      path: /api-specs/ui
+    #swagger-ui:
+    #  path: /api-specs/ui
   health:
     checks:
       data-source-health-check:
