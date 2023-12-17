@@ -1,53 +1,27 @@
 # SimplSrecka
 
-## Mikrostoritev:Lottery Ticket Catalog
+## Mikrostoritev: Lottery Ticket Catalog
 
 ### Funkcionalnosti te mikrostoritve:
 * Ogled kataloga srečk
-* Treba še dodati/napisati!!!!
+* Dodajanje srečke
+* Ogled podatkov srečke
+* Urejanje srečk
 
-|   |   |
-|--|--|
-|__Naziv Projekta__| SimplSrečka |
-|__Člani Skupine__| Brecelj Luka, Kržan Ariana |
-|__Opis Projekta__| Razvili bomo spletno loterijo SimplSrečka, ki bo ponujala svojo srečko z istim imenom. Poleg te bo mogoče kupiti tudi druge srečke kot so Eurojackpot in Loto. Aplikacija bo ponujala vplačilo srečk, ogled rezultatov žrebanj in upravljanje s svojim stanjem. |
-|__Razvojno ogrodje__| Java, Docker, Kubernetes |
-
-## Funkcionalnosti
-* Registracija
-* Login
-* Logout
-* Ogled kataloga srečk
-* Izbira kombinacije
-* Vplačilo kombinacije
-* Ogled vseh svojih vplačanih kombinacij
-* Ogled preteklih rezultatov žrebanj za vse kategorije srečk
-* Žrebanje SimplSrečke
-* Ogled stanja na računu
-* Polnjenje stanja
-* Dvig stanja
-
-## Arhitektura
- ![picture alt](arhitektura.png)
-
-## Use Case
-* Nakup srečke
-* Polnjenje sranja
-* Dvig stanja
-* Filtriranje srečk glede na velikost dobitka
-* Ogled svojih zadetkov
+### Use Case
+* Ogled podatkov izbrane srečke
+* Urejanje glavnega dobitka izbrane srečke
 
 
+## Zagon in Testiranje
 
-# ZA ZAGON IN TESTIRANJE
-
-## Prerequisites
+### Prerequisites
 
 ```bash
 docker run -d --name pg-lottery-ticket -e POSTGRES_USER=dbuser -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=lottery-ticket -p 5432:5432 postgres:13
 ```
 
-## Build and run commands
+### Build and run commands
 ```bash
 mvn clean package
 cd api/target
