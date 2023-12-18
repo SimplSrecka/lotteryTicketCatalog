@@ -37,7 +37,7 @@ kumuluzee:
       disk-space-health-check:
         threshold: 100000000
         type: liveness
-  metrics:
+  #metrics:
     #web-instrumentation:
     #  - name: tickets-endpoint
     #    url-pattern: /v1/tickets/*
