@@ -14,7 +14,7 @@ import org.eclipse.microprofile.openapi.annotations.servers.Server;
         contact = @Contact(email = "lb4684@student.uni-lj.si"),
         license = @License(name = "dev"), description = "API for managing image metadata."),
         //servers = @Server(url = "http://localhost:8081/"))
-        servers = @Server(url = "http://52.226.192.46/lottery-ticket-catalog"))
+        servers = @Server(url = "http://52.226.192.46:8081/lottery-ticket-catalog"))
 @ApplicationPath("/v1")
 public class LotteryTicketApplication extends Application {
 
