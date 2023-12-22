@@ -27,7 +27,7 @@ kumuluzee:
   openapi-mp:
     ui:
       #specification-server: http://localhost:8081
-      specification-server: http://52.226.192.46:8081/lottery-ticket-catalog
+      specification-server: http://52.226.192.46:8081
   health:
     checks:
       data-source-health-check:
