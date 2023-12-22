@@ -24,10 +24,10 @@ kumuluzee:
       - lottery-ticket-catalog-models
       - lottery-ticket-catalog-services
       - lottery-ticket-catalog-lib
-  #openapi-mp:
-  #  ui:
-      #specification-server: http://localhost:8081
-  #    specification-server: http://52.226.192.46/lottery-ticket-catalog
+  openapi-mp:
+    ui:
+      specification-server: http://localhost:8081
+      #specification-server: http://52.226.192.46/lottery-ticket-catalog
   health:
     checks:
       data-source-health-check:
