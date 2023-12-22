@@ -29,7 +29,7 @@ kumuluzee:
       #specification-server: http://localhost:8081
       specification-server: http://52.226.192.46:8081
     swagger-ui:
-     path: ari
+     path: /ari
   health:
     checks:
       data-source-health-check:
