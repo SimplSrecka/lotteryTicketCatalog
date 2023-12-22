@@ -27,9 +27,9 @@ kumuluzee:
   openapi-mp:
     ui:
       #specification-server: http://localhost:8081
-      specification-server: http://52.226.192.46
-    swagger-ui:
-      path: /lottery-ticket-catalog/api-specs/ui
+      specification-server: http://52.226.192.46/lottery-ticket-catalog
+    #swagger-ui:
+    #  path: /lottery-ticket-catalog/api-specs/ui
   health:
     checks:
       data-source-health-check:
