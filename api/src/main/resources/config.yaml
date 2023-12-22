@@ -5,7 +5,7 @@ kumuluzee:
   version: 1.0.0
   server:
     #base-url: http://localhost:8081
-    base-url: http://20.124.175.39:8081
+    base-url: http:/52.226.192.4:8081
     http:
       port: 8081
   datasources:
@@ -27,7 +27,7 @@ kumuluzee:
   openapi-mp:
     ui:
       #specification-server: http://localhost:8081
-      specification-server: http://20.124.175.39:8081
+      specification-server: http://52.226.192.4:8081
     swagger-ui:
       path: /lottery-ticket-catalog/api-specs/ui
   health:
