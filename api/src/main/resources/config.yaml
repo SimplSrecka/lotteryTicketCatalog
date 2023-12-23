@@ -26,9 +26,9 @@ kumuluzee:
   openapi-mp:
     ui:
       specification-server: http://52.226.192.46
-      mapping: /lottery-ticket-catalog/api-specs/ui
+      mapping: api-specs/ui
     servers:
-      - url: /lottery-ticket-catalog/openapi
+      - url: openapi
   health:
     checks:
       data-source-health-check:
