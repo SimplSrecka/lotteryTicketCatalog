@@ -28,8 +28,8 @@ kumuluzee:
     ui:
       server-auto-config:
         enabled: true
-        original-uri-check: false
-      #specification-server: http://52.226.192.46/lottery-ticket-catalog
+        original-uri-check: true
+      specification-server: http://52.226.192.46/lottery-ticket-catalog
     #ui:
       #specification-server: http://localhost:8081
       #specification-server: http://52.226.192.46/lottery-ticket-catalog
