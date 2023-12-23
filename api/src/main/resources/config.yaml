@@ -26,8 +26,7 @@ kumuluzee:
   openapi-mp:
     ui:
       specification-server: http://52.226.192.46/lottery-ticket-catalog
-      swagger-ui:
-        path: /lottery-ticket-catalog/ariana
+      mapping: /lottery-ticket-catalog/api-specs/ui
   health:
     checks:
       data-source-health-check:
