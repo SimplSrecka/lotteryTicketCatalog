@@ -27,7 +27,7 @@ kumuluzee:
     ui:
       specification-server: http://52.226.192.46/lottery-ticket-catalog
       swagger-ui:
-        path: /lottery-ticket-catalog/api-specs/ui
+        path: /lottery-ticket-catalog/ariana
   health:
     checks:
       data-source-health-check:
