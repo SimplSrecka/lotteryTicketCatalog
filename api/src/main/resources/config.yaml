@@ -25,7 +25,7 @@ kumuluzee:
       - lottery-ticket-catalog-lib
   openapi-mp:
     ui:
-      specification-server: http://52.226.192.46/lottery-ticket-catalog
+      specification-server: http://52.226.192.46
       mapping: /lottery-ticket-catalog/api-specs/ui
   health:
     checks:
