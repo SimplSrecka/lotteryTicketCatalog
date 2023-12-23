@@ -4,8 +4,8 @@ kumuluzee:
     name: dev
   version: 1.0.0
   server:
-    #base-url: http://localhost:8081
-    base-url: http:/52.226.192.46/lottery-ticket-catalog
+    base-url: http://localhost:8081
+    #base-url: http:/52.226.192.46/lottery-ticket-catalog
     http:
       port: 8081
   datasources:
@@ -28,7 +28,7 @@ kumuluzee:
     ui:
       server-auto-config:
         enabled: true
-        original-uri-check: true
+        original-uri-check: false
       specification-server: http://52.226.192.46/lottery-ticket-catalog
     #ui:
       #specification-server: http://localhost:8081
