@@ -27,7 +27,7 @@ kumuluzee:
   openapi-mp:
     ui:
       server-auto-config:
-        enabled: false
+        enabled: true
         original-uri-check: false
     #ui:
       #specification-server: http://localhost:8081
