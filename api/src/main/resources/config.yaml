@@ -26,9 +26,9 @@ kumuluzee:
       - lottery-ticket-catalog-lib
   openapi-mp:
     ui:
-      #erver-auto-config:
-      #  enabled: true
-      #  original-uri-check: false
+      server-auto-config:
+        enabled: false
+        original-uri-check: true
       specification-server: http://52.226.192.46/lottery-ticket-catalog
     #ui:
       #specification-server: http://localhost:8081
