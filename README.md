@@ -12,6 +12,9 @@
 * Ogled podatkov izbrane srečke
 * Urejanje glavnega dobitka izbrane srečke
 
+### API Swagger:
+* http://52.226.192.46/lottery-ticket-catalog/api-specs/ui/?url=http://52.226.192.46/lottery-ticket-catalog/openapi&oauth2RedirectUrl=http://52.226.192.46/lottery-ticket-catalog/api-specs/ui/oauth2-redirect.html
+
 
 ## Zagon in Testiranje
 
