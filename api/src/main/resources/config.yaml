@@ -4,10 +4,7 @@ kumuluzee:
     name: dev
   version: 1.0.0
   server:
-    #base-url: http://localhost:8081
     base-url: http:/52.226.192.46/lottery-ticket-catalog
-    http:
-      port: 8081
   datasources:
     - jndi-name: jdbc/LotteryTicketDS
       #connection-url: jdbc:postgresql://localhost:5432/lottery-ticket
