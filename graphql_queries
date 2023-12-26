@@ -1,0 +1,24 @@
+query allImageMetadata {
+   allLotteryTickets(pagination: {offset: 0, limit: 1},
+    						sort: {fields: [{field: "ticketId", order: ASC}]}) {
+    result {
+    	ticketId
+    	name
+    	description
+        price
+    }
+    pagination {
+      offset
+      limit
+      total
+    }
+  }
+}
+
+mutation addImageMetadata {
+  addLotteryTicket(lotteryTicket: {name: "Srečka GraphQL", description: "Srečka ustvarjena preko GraphQL", price: 5}){
+    name
+    description
+    price
+  }
+}

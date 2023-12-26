@@ -1,0 +1,41 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-simplsrecka
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: nginx
+  rules:
+    - http:
+        paths:
+          - path: /user(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: user
+                port:
+                  number: 8080
+          - path: /lottery-ticket-catalog(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: lottery-ticket-catalog
+                port:
+                  number: 8081
+          - path: /transaction(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: transaction
+                port:
+                  number: 8082
+          - path: /lottery-drawing-results(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: lottery-drawing-results
+                port:
+                  number: 8083
