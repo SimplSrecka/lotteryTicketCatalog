@@ -27,7 +27,7 @@ kumuluzee:
       specification-server: http://52.226.192.46/lottery-ticket-catalog
       #mapping: /lottery-ticket-catalog/api-specs/ui
   graphql:
-    mapping: lottery-ticket-catalog/graphql
+    mapping: lottery-ticket-catalog/lottery-ticket-catalog/graphql
     ui:
       mapping: /lottery-ticket-catalog/graphiql
       enabled: true
