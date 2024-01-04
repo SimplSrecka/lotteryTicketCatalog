@@ -28,7 +28,7 @@ kumuluzee:
       #mapping: /lottery-ticket-catalog/api-specs/ui
   graphql:
     ui:
-      mapping: /api-ui
+      mapping: /lottery-ticket-catalog/api-ui
       enabled: true
   health:
     checks:
