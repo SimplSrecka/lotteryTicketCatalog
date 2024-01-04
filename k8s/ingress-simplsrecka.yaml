@@ -39,7 +39,7 @@ spec:
                 name: lottery-drawing-results
                 port:
                   number: 8083
-          - path: /graphiql(/|$)(.*)
+          - path: /lottery-ticket-catalog/graphiql(/|$)(.*)
             pathType: ImplementationSpecific
             backend:
               service:
