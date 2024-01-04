@@ -12,9 +12,9 @@ kumuluzee:
       #connection-url: jdbc:postgresql://localhost:5432/lottery-ticket
       connection-url: jdbc:postgresql://sqlsimplsrecka.postgres.database.azure.com:5432/lottery-ticket
       username: lukaariana
-      #password: ${{ secrets.AZURE_CREDENTIALS }}
+      password: ${{ secrets.AZURE_CREDENTIALS }}
       #username: dbuser
-      password: XonaryLu99
+      #password: XonaryLu99
       pool:
         max-size: 4
   dev:
@@ -27,7 +27,7 @@ kumuluzee:
       specification-server: http://52.226.192.46/lottery-ticket-catalog
       #mapping: /lottery-ticket-catalog/api-specs/ui
   graphql:
-    mapping: lottery-ticket-catalog/lottery-ticket-catalog/graphql
+    #mapping: lottery-ticket-catalog/graphql
     ui:
       mapping: /lottery-ticket-catalog/graphiql
       enabled: true
