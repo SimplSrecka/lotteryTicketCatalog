@@ -14,7 +14,7 @@ kumuluzee:
       username: lukaariana
       password: ${{ secrets.AZURE_CREDENTIALS }}
       #username: dbuser
-      #password: XonaryLu99
+      #password: postgres
       pool:
         max-size: 4
   dev:
@@ -26,11 +26,6 @@ kumuluzee:
     ui:
       specification-server: http://52.226.192.46/lottery-ticket-catalog
       #mapping: /lottery-ticket-catalog/api-specs/ui
-  graphql:
-    #mapping: lottery-ticket-catalog/graphql
-    ui:
-      mapping: /lottery-ticket-catalog/graphiql
-      enabled: true
   health:
     checks:
       data-source-health-check:
